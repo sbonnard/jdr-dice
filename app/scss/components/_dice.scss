@@ -5,9 +5,23 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        position: relative;
     }
 
     &__word {
         word-spacing: 0.5rem;
     }
+
+    &__banner {
+        position: absolute;
+        display: none;
+        background-color: $black90;
+        width: 100vw;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'messiri';
+        font-size: 3rem;
+        top: 40%;
+        z-index: 10;
+        }
 }
