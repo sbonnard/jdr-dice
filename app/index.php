@@ -7,19 +7,23 @@
     <title>JDR Fratrie</title>
     <link rel="stylesheet" href="scss/style.scss">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- if development -->
+    <script type="module" src="http://localhost:5173/@vite/client"></script>
+    <script type="module" src="http://localhost:5173/js/script.js"></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="header bg-blur">
         <h1 class="ttl ttl--main">JDR Fratrie</h1>
     </header>
 
-    <main>
-
+    <main class="container">
+        <h2>Dé 100</h2>
+        <img src="img/dice-white.svg" alt="Dé de JDR blanc">
     </main>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 
