@@ -1,0 +1,13 @@
+.dice {
+    &__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__word {
+        word-spacing: 0.5rem;
+    }
+}
