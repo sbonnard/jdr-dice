@@ -1,0 +1,16 @@
+// style.scss
+@use 'var';
+@use 'fonts';
+@use 'root';
+@use 'reset';
+@use 'body';
+
+// COMPONENTS //
+@use 'components/utils';
+@use 'components/titles';
+@use 'components/hamburger';
+@use 'components/container';
+@use 'components/effect';
+@use 'components/dice';
+@use 'components/header';
+@use 'components/footer';

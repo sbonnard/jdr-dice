@@ -1,16 +1,16 @@
-@import "var";
-@import "fonts";
-@import "root";
-@import "reset";
-@import "body";
+// style.scss
+@import 'var';
+@import 'fonts';
+@import 'root';
+@import 'reset';
+@import 'body';
 
 // COMPONENTS //
-
-@import "components/utils";
-@import "components/titles";
-@import "components/hamburger";
-@import "components/container";
-@import "components/effect";
-@import "components/dice";
-@import "components/header";
-@import "components/footer";
+@import 'components/utils';
+@import 'components/titles';
+@import 'components/hamburger';
+@import 'components/container';
+@import 'components/effect';
+@import 'components/dice';
+@import 'components/header';
+@import 'components/footer';

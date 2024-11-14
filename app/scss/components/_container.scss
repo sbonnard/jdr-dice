@@ -8,4 +8,9 @@
     margin: auto;
     gap: 5rem;
     padding: 3rem 1rem;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
