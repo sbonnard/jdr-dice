@@ -14,7 +14,6 @@
 
     &__banner {
         position: absolute;
-        display: none;
         background-color: $black90;
         width: 100vw;
         padding: 1rem;
@@ -23,5 +22,34 @@
         font-size: 3rem;
         top: 40%;
         z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 2s ease-in-out, visibility 0s 1s;
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
         }
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            border-radius: 2rem;
+        }
+    }
+
+    &__rolling {
+        animation: rollDice 1.5s linear;
+    }
+
+    &--crit {
+        color: $gold;
+    }
+
+    &--fail {
+        color: $zinzolin;
+    }
+
+    &--normal {
+        color: $white;
+    }
 }
