@@ -1,4 +1,10 @@
 .dice {
+    width: 14rem;
+
+    &--100 {
+        width: 18rem;
+    }
+
     &__section {
         display: flex;
         flex-direction: column;
