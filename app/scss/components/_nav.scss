@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    &__lnk {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            background-color: rgba(255, 2, 255, 0.5);
+            backdrop-filter: blur(5px);
+        }
+    }
+}

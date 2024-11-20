@@ -1,4 +1,11 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $black20;
     padding: 1.5rem;
+
+    @media screen and (min-width: 764px) {
+        justify-content: space-between;
+    }
 }
