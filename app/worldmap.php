@@ -12,8 +12,8 @@
     <script type="module" src="http://localhost:5173/js/script.js"></script> -->
 
     <!-- Production -->
-    <link rel="stylesheet" href="assets/assets/script-DdlIN1wo.css">
-    <script type="module" src="assets/assets/script-DVlUWrJr.js"></script>
+    <link rel="stylesheet" href="assets/assets/script-6H3_gpZY.css">
+    <script type="module" src="assets/assets/script-BmnRhcwj.js"></script>
 
     <!-- RPG DICES 3D -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r136/three.min.js"></script>
@@ -48,7 +48,7 @@
 
     <main class="container">
 
-        <img src="img/worldmap.webp" alt="Carte du monde du JDR">
+        <img class="worldmap" src="img/worldmap.webp" alt="Carte du monde du JDR">
 
     </main>
 
