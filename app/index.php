@@ -40,7 +40,7 @@
                     <a href="index.php" class="nav__lnk">Accueil</a>
                 </li>
                 <li class="nav__itm">
-                    <a href="index.php" class="nav__lnk">Carte du Monde</a>
+                    <a href="worldmap.php" class="nav__lnk">Carte du Monde</a>
                 </li>
             </ul>
         </nav>
