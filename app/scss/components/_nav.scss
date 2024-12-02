@@ -3,12 +3,17 @@
     flex-direction: row;
     gap: 3rem;
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     &__lnk {
         font-size: 1.5rem;
         transition: all 0.25s ease-in-out;
 
         &:hover {
-            text-shadow: 0 0 10px #08ceff, 0 0 12px #08ceff;
+            text-shadow: 0 0 10px $electric, 0 0 12px $electric;
         }
     }
 }

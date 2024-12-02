@@ -12,8 +12,8 @@
     <script type="module" src="http://localhost:5173/js/script.js"></script> -->
 
     <!-- Production -->
-    <link rel="stylesheet" href="assets/assets/script-6H3_gpZY.css">
-    <script type="module" src="assets/assets/script-BmnRhcwj.js"></script>
+    <link rel="stylesheet" href="assets/assets/script-BW4HPhpW.css">
+    <script type="module" src="assets/assets/script-pK4JEM7c.js"></script>
 
     <!-- RPG DICES 3D -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r136/three.min.js"></script>
@@ -46,7 +46,7 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container container--grid">
 
         <section class="dice__section" aria-labelledby="ttl100">
             <div class="dice__banner" data-banner="100" id="banner100">100</div>
