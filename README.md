@@ -1,3 +1,7 @@
+# Don't Roll Single
+
+Web app to launch rpg dices from dice 4 to dice 100.
+
 # LAMP ENVIRONMENT
 
 ## BUILD AND RUN
