@@ -1,3 +1,6 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Dices variables
+
 const dice100 = document.getElementById('dice100');
 const dice20 = document.getElementById('dice20');
 const dice12 = document.getElementById('dice12');
@@ -8,13 +11,14 @@ const dice4 = document.getElementById('dice4');
 
 const allDices = document.querySelectorAll('[data-dice]');
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Banners to display result.
 const allBanners = document.querySelectorAll('[data-banner]');
 
 
-// dice100.addEventListener('click', function(e) {
-//     dice100.classList.add('dice__rolling');
-// })
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Loop to throw dices.
 allDices.forEach(dice => {
     dice.addEventListener('click', function () {
 
@@ -38,7 +42,7 @@ allDices.forEach(dice => {
                 bannerToShow.classList.add('dice--crit');
                 bannerToShow.classList.remove('dice--fail', 'dice--normal'); // On enlève les autres classes
             }
-            
+
             // Vérification pour l'échec critique (entre 95 et 100 pour le dé 100)
             if (diceValue === 100 && random >= 95 && random <= 100) {
                 bannerToShow.classList.add('dice--fail');
@@ -80,3 +84,42 @@ function getRandomNumber(min, max) {
     let maxValue = Math.floor(max);
     return Math.floor(Math.random() * ((maxValue + 1) - minValue) + 1);
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Manage to target body parts with a dice.
+
+const bodyDice = document.getElementById('bodyDice');
+const bodyParts = [
+    'Jambe droite',
+    'Jambe gauche',
+    'Bras droit',
+    'Bras gauche',
+    'Tête',
+    'Poitrine',
+    'Ventre',
+    'Cou'
+];
+
+bodyDice.addEventListener('click', function () {
+    // Ajoute la classe pour l'animation du dé
+    bodyDice.classList.add('dice__rolling');
+
+    const diceValue = bodyParts[Math.floor(Math.random() * bodyParts.length)];
+
+    console.log(diceValue);
+
+
+    const bannerToShow = document.querySelector(`[data-banner="body"]`);
+    bannerToShow.classList.add('dice__banner--visible');
+    bannerToShow.innerHTML = diceValue;
+
+    setTimeout(() => {
+        bannerToShow.classList.remove('dice__banner--visible');
+    }, 5000); // 5000 ms = 5 secondes
+
+    setTimeout(() => {
+        bodyDice.classList.remove('dice__rolling');
+    }, 1500); // 1500 ms = 1,5 secondes (durée de l'animation du dé)
+});

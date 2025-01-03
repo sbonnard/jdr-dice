@@ -36,22 +36,33 @@
         </div>
         <nav class="nav hamburger__menu" id="menu" aria-label="Navigation principale du site">
             <ul class="nav" id="nav-list">
-                <li class="nav__itm">
+                <!-- <li class="nav__itm">
                     <a href="index.php" class="nav__lnk">Accueil</a>
-                </li>
-                <li class="nav__itm">
+                </li> -->
+                <!-- <li class="nav__itm">
                     <a href="worldmap.php" class="nav__lnk">Carte du Monde</a>
-                </li>
+                </li> -->
+                <!-- <li class="nav__itm">
+                    <a href="" class="nav__lnk">Se connecter</a>
+                </li> -->
             </ul>
         </nav>
     </header>
 
     <main class="container container--grid">
 
+        <section class="dice__section" aria-labelledby="ttlbody">
+            <div class="dice__banner" data-banner="body" id="bannerbody">Aïe</div>
+            <h2 class="ttl dice__word" id="ttlbody">Dé <span class="number">Ciblage</span></h2>
+            <button id="bodyDice">
+                <img class="dice--body" src="img/body.png" alt="Dé corps de JDR">
+            </button>
+        </section>
+
         <section class="dice__section" aria-labelledby="ttl100">
             <div class="dice__banner" data-banner="100" id="banner100">100</div>
             <h2 class="ttl dice__word" id="ttl100">Dé <span class="number">100</span></h2>
-            <button id="dice100" data-dice="100" onclick="_rollingTheDices.throw_dices()">
+            <button id="dice100" data-dice="100">
                 <img class="dice dice--100" src="img/100.png" alt="Dé 100 de JDR">
             </button>
         </section>
