@@ -18,8 +18,8 @@ require_once 'includes/_partials.php';
     <script type="module" src="http://localhost:5173/js/script.js"></script> -->
 
     <!-- Production -->
-    <link rel="stylesheet" href="assets/assets/script-BW4HPhpW.css">
-    <script type="module" src="assets/assets/script-pK4JEM7c.js"></script>
+    <link rel="stylesheet" href="assets/assets/script-BzxqH_86.css">
+    <script type="module" src="assets/assets/script-CtvaXMUD.js"></script>
 
     <!-- RPG DICES 3D -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r136/three.min.js"></script>
